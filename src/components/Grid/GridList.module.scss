@@ -1,0 +1,29 @@
+.Grid{
+    display: flex;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    flex-direction: column;
+    .GridView{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2%;
+    }
+}
+
+
+@media(max-width: 767.98px){
+    .Grid{
+        width: 90%;
+    }
+}
+
+@media(max-width: 575.98px){
+    .Grid{
+        .GridView{
+            flex-direction: column;
+        }
+    }
+}

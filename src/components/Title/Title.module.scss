@@ -1,0 +1,86 @@
+.ButtonsWrapper{
+        display: flex;
+        justify-content: space-between;
+        .Buttons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25%;
+            button{
+                border: 1px solid white;
+                background-color: #d45ec5;
+                margin-top: 3%;
+                width: 30%;
+                color: white;
+                font-size: 1vw;
+                padding: 5px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        h2{
+            font-size: 2vw;
+            position: relative;
+            &::after{
+                content: '';
+                height: 0.3vw;
+                width: 3.5vw;
+                background-color: #d45ec5;
+                position: absolute;
+                bottom: 15%;
+                left: 0;
+            }
+        }
+    }
+    .ListItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+@media(max-width: 1199.98px){
+        .ButtonsWrapper{
+            h2:after{
+                height: 2px;
+                bottom: 30%;
+            }
+        }
+    }
+
+
+@media(max-width: 767.98px){
+        .ButtonsWrapper{
+            .Buttons{
+                button{
+                    font-size: 10px;
+                    padding: 2px;
+                }
+            }
+            h2{
+                font-size: 18px;
+                &::after{
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+
+@media(max-width: 575.98px){
+        .ButtonsWrapper{
+            .Buttons{
+                width: 50%;
+                button{
+                    font-size: 10px;
+                }
+            }
+            h2{
+                font-size: 16px;
+                &::after{
+                    width: 28px;
+                }
+            }
+        }
+    }

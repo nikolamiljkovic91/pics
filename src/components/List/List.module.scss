@@ -1,0 +1,35 @@
+.List{
+    display: flex;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    flex-direction: column;
+    .ListView{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+}
+
+
+@media(max-width: 767.98px){
+    .List{
+        width: 90%;
+    }
+}
+
+
+.GridView{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+@media(max-width: 575.98px){
+    .GridView{
+        flex-direction: column;
+    }
+}

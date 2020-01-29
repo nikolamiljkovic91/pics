@@ -1,0 +1,43 @@
+.Footer{
+    background-color: black;
+    height: 3.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    p{
+        color: white;
+        margin: 0;
+        padding-bottom: 5px;
+        font-style: italic;
+        font-size: 0.8vw;
+        span{
+            font-size: 1.2vw;
+            font-weight: bold;
+        }
+    }
+}
+
+@media(max-width: 767.98px){
+    .Footer{
+        height: 4vw;
+        p{
+            font-size: 8px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 575.98px){
+    .Footer{
+        height: 7vw;
+        p{
+            font-size: 6px;
+            span{
+                font-size: 8px;
+            }
+        }
+    }
+}
+

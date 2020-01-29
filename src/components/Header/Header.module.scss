@@ -1,0 +1,14 @@
+.Header{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 575.98px){
+    .Header{
+        height: 8vw;
+    }
+}

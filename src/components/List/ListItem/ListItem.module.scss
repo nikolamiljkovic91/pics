@@ -1,0 +1,342 @@
+.ListItem{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 3%;
+    &:last-child{
+        border: none;
+    }
+    .Content{
+        width: 80%;;
+        display: flex;
+        .ImgWrapper{
+            width: 25%;
+            overflow: hidden;
+            max-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+        .Date{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: gray;
+            p{
+                padding-bottom: 10%;
+            }
+        }
+        .Info{
+            width: 40%;
+            max-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0px;
+            p{
+                font-size: 1vw;
+                font-weight: bold;
+                margin: 0px;
+                padding-bottom: 2%;
+            }
+            p:first-child{
+                color: #d45ec5;
+                padding-bottom: 4%;
+            }
+            .WidthHeight{
+                display: flex;
+                p{
+                    font-size: 1.2vw;
+                    padding-right: 10px;
+                    color: black;
+                }
+            }
+        }
+    }
+    .Button{
+        max-height: 140px;
+        display: flex;
+        align-items: center;
+        width: 20%;
+        button{
+            width: 100%;
+            border: 1px solid #d45ec5;
+            background-color: #d45ec5;
+            color: white;
+            font-size: 1.4vw;
+            padding: 7% 5%;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 10%;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1199.98px){
+    .ListItem{
+        .Content{
+        .ImgWrapper{
+            max-height: 70px;
+            width: 30%;
+        }
+        .Date{
+            font-size: 1.4vw;
+        }
+        .Info{
+            max-height: 80px;
+            p{
+                font-size: 1.2vw;
+            }
+            .WidthHeight{
+                p{
+                    font-size: 1.4vw;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .Button{
+        max-height: 80px;
+        button{
+            padding: 8% 12%;
+            span{
+                width: 20%;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+}
+
+@media(max-width: 767.98px){
+    .ListItem{
+        .Content{
+            .Date{
+                    font-size: 12px;
+            }
+            .Info{
+                p{
+                    font-size: 10px;
+                };
+                .WidthHeight{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .Button{
+            button{
+                font-size: 12px;
+                span{
+                    width: 20%;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575.98px){
+    .ListItem{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Content{
+            width: 100%;
+            .Date{
+                width: 15%;
+                font-size: 10px;
+            }
+            .Info{
+                width: 60%;
+                p{
+                    font-size: 8px;
+                }
+                .WidthHeight{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .Button{
+            width: 43%;
+            button{
+                padding: 2% 5%;
+                span{
+                    width: 20%;
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///////// GRID ITEM //////////
+
+
+.GridItem{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #a3a0a3;
+    box-shadow: 0px 4px 14px 1px rgba(163,160,163,1);
+    border-radius: 2%;
+    width: 32%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    justify-content: space-between;
+    .Content{
+        display: flex;
+        flex-direction: column;
+        .ImgWrapper{
+            width: 100%;
+            overflow: hidden;
+            max-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+        .Date{
+            padding-top: 1%;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2vw;
+            color: grey;
+            font-weight: bold;
+            p{
+                padding-bottom: 10%;
+            }
+        }
+        .Info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 3%;
+            p{
+                font-size: 1vw;
+                font-weight: bold;
+                padding-bottom: 2%;
+            }
+            p:first-child{
+                color: #d45ec5;
+                padding-bottom: 4%;
+            }
+            .WidthHeight{
+                display: flex;
+                p{
+                    font-size: 1.2vw;
+                    padding-right: 10px;
+                    color: black;
+                }
+            }
+        }
+    }   
+}
+
+@media(max-width: 1500px){
+    .GridItem{
+        .Content{
+            .ImgWrapper{
+                max-height: 170px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1199.98px){
+    .GridItem{
+        .Content{
+        .ImgWrapper{
+            max-height: 120px;
+        }
+    }
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .GridItem{
+        .Content{
+            .ImgWrapper{
+                max-height: 95px;
+            }
+        }
+    }
+ }
+
+
+@media(max-width: 767.98px){
+    .GridItem{
+        .Content{
+            .Date{
+                font-size: 12px;
+            }
+            .Info{
+                p{
+                    font-size: 10px;;
+                }
+                .WidthHeight{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575.98px){
+    .GridItem{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        .Content{
+            .ImgWrapper{
+                max-height: 150px;
+            }
+            .Date{
+                font-size: 10px;
+            }
+            .Info{
+                p{
+                    font-size: 8px;
+                }
+                .WidthHeight{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
